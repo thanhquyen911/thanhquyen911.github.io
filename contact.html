@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<link href="css/main-contact.css" rel="stylesheet">
+	<link href="css/site.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
+		<link href="css/nav.css" rel="stylesheet">
+</head>
+		
+<body>
+	
+	<div id="wrapper">
+		
+	
+		<div id="nav">
+			<div class="about" style="float: left;"><a href="index.html">Home</a></div>
+			<div class="about" style="float: left;margin-left: 20%;"><a href="artist.html">Artists</a></div>
+			<div class="about" style="float: right;"><a href="about.html">About</a></div>
+			
+			<div class="clear"></div>
+			<div class="about" style="float: left; margin-top: 43.5%; -webkit-text-fill-color:#ffe600;-webkit-text-stroke: 0px #fff;">Contact</div>
+			<div class="about" style="float: right; margin-top: 43.5%;"><a href="faqs.html">Faqs</a></div>
+		</div>
+	
+			<div class="phone wow fadeInUp">
+				
+				<img src="images/phone-09.png" width="100%" alt="">
+			
+			</div>
+		
+			<div class="phone-square wow fadeIn" data-wow-delay="1s">
+				<img src="images/12-12.png" width="100%" alt="">
+		
+			</div>
+				
+			<div class="location wow fadeInUp" data-wow-delay="0.5s">
+				<img src="images/location-10.png" width="100%" alt="">
+		
+			</div>
+		
+			<div class="location-square wow fadeIn" data-wow-delay="1s">
+		
+				<img src="images/13-13.png" width="100%" alt="">
+			</div>
+				
+			<div class="email wow fadeInUp" data-wow-delay="1s">
+	
+				<img src="images/email-11.png" width="100%" alt="">
+			</div>
+		
+			<div class="email-square wow fadeIn" data-wow-delay="1.5s">
+		
+				<img src="images/14-14.png" width="100%" alt="">
+			</div>
+		</div>
+		
+	
+	<script src="js/wow.js"></script>
+	
+	<script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init();
+    document.getElementById('moar').onclick = function() {
+      var section = document.createElement('section');
+      section.className = 'section--purple wow fadeInDown';
+      this.parentNode.insertBefore(section, this);
+    };
+  </script>
+	
+	<link href="js/jquery-3.4.1.min.js" rel="stylesheet">
+	<link href="js/jquery.smoothState.min.js" rel="stylesheet">	
+	<link href="js/smoothstate_2.js" rel="stylesheet">
+</body>
+</html>

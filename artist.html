@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Continuous Vertical scrolling - fullPage.js</title>
+	<meta name="author" content="Matthew Howell" />
+	<meta name="description" content="fullPage continuous scrolling demo." />
+	<meta name="keywords"  content="fullpage,jquery,demo,scroll,loop,continuous" />
+	<meta name="Resource-type" content="Document" />
+<title>Untitled Document</title>
+<link href="css/main_artist.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="css/nav.css" />
+
+	<!--transition-->
+	
+	<link href="css/pageTransitions.css" rel="stylesheet">
+	<link href="css/transition.css" rel="stylesheet">
+	
+	
+	
+	
+	
+
+	<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+	
+	
+	
+	
+</head>
+
+<body> 
+
+	<div id="main" class="m-scene">
+		
+		
+		
+		
+		<div id="nav">
+			<div class="about" style="float: left;"><a href="index.html">Home</a></div>
+			<div class="about" style="float: left;margin-left: 20%; -webkit-text-fill-color:#ffe600;-webkit-text-stroke: 0px #fff;">Artists</div>
+			<div class="about" style="float: right;"><a href="about.html">About</a></div>
+			
+			<div class="clear"></div>
+			<div class="about" style="float: left; margin-top: 43.5%;"><a href="contact.html">Contact</a></div>
+			<div class="about" style="float: right; margin-top: 43.5%;"><a href="faqs.html">Faqs</a></div>
+		</div>
+	
+  		
+		
+		<div class="name-khung">
+			
+	
+			<div class="name" >
+				<div class="marquee" >
+				  <div class="track">
+					<div class="content" >&nbsp;SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW </div>
+				  </div>
+				</div>
+				
+			
+			
+			</div>
+			
+			<div class="name-1">
+				<div class="marquee">
+				  <div class="track-rev">
+					<div class="content">&nbsp;SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW </div>
+				  </div>
+				</div>
+			</div>
+		
+			<div class="name-2">
+				<div class="marquee">
+				  <div class="track">
+					<div class="content">&nbsp;SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW SI SHOW </div>
+				  </div>
+				</div>
+			</div>			
+			<!--
+		<marquee behavior="scroll" scrollamount="30%"><span>MARZUZ MARZUZ MARZUZ</span></marquee> -->
+	 
+		</div>	
+			
+	
+		<div class="scene_element scene_element--fadeinup">	
+			
+		<div class="artist-khung">
+						<div class="artist_frame"></div>
+					<div class="artist_frame_2"></div>
+				
+				<div id="fullpage">
+				
+					<div class="section " id="section0" style="background-color: transparent;">
+						
+						<img src="images/artist-12.png" alt="fullPage" />
+					</div>
+					<div class="section" id="section1" style="background-color: transparent;">
+						<img src="images/marzuz-15.png" alt="fullPage" />
+					</div>
+					<div class="section" id="section2" style="background-color: transparent;">
+						<img src="images/artist-13.png" alt="fullPage" />
+					</div>
+					<div class="section" id="section3" style="background-color: transparent;">
+						<img src="images/artist-14.png" alt="fullPage" />
+					</div>
+					<div class="section" id="section4" style="background-color: transparent;">
+						<img src="images/artist-17.png" alt="fullPage" />
+					</div>
+					<div class="section" id="section5" style="background-color: transparent;">
+						<img src="images/artist-16.png" alt="fullPage" />
+					</div>
+					<div class="section" id="section6" style="background-color: transparent;">
+						<img src="images/artist-18.png" alt="fullPage" />
+					</div>
+				</div>
+			
+			
+			
+			</div>
+		
+		</div>	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	
+	
+	</div>
+	
+	
+	
+		<script type="text/javascript" src="js/fullpage.js"></script>
+		<script type="text/javascript" src="js/examples.js"></script>
+
+		<script type="text/javascript">
+			var myFullpage = new fullpage('#fullpage', {
+
+			  anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+			  menu: '#menu',
+			  continuousVertical: true,
+			  afterLoad: function(anchorLink, index){
+					console.log("AFTER LOAD - anchorLink:" +anchorLink + " index:" +index );
+				},
+				onLeave: function(index, nextIndex, direction){
+					console.log("ONLEAVE - index:" +index + " nextIndex:" +nextIndex  + " direction:" + direction);
+
+				},
+			});
+		</script>
+	
+	<!--transition-->
+	
+	<link href="js/jquery-3.4.1.min.js" rel="stylesheet">
+	<link href="js/jquery.smoothState.min.js" rel="stylesheet">
+	
+	
+	
+		
+	
+</body>
+</html>

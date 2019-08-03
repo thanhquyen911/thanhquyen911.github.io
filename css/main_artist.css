@@ -1,0 +1,435 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face
+{
+	font-family: Monument-bold;
+	src: url(../font/MonumentExtended-Ultrabold.otf);
+	
+}
+@font-face
+{
+	font-family: Monument-regular;
+	src: url(../font/MonumentExtended-Regular.otf);
+	
+}
+
+body,html
+{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.clear
+{
+	clear: both;
+}
+#main
+{
+	width: 100%;
+	height: 100%;
+	background-color:#7F5CFF;
+	position: relative;
+	
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.name-khung
+{
+	width: 100%;
+	height: 80%;
+
+	align-items: center ;
+	position: absolute;
+	top:10%;
+	
+	
+
+
+}
+.name
+{
+	width: 90%;
+	height: 25%;
+	
+	font-family: Monument-bold;
+	font-size: 1700%;
+	letter-spacing: 7.5px;
+	 -webkit-text-stroke: 5px #fff800;
+ -webkit-text-fill-color: transparent;
+	margin-left: 5%;
+	margin-top:3%;
+	
+	
+	position: absolute;
+
+  overflow: hidden;
+	
+  
+}
+
+.name-1
+{
+	width: 90%;
+	height: 25%;
+	
+	font-family: Monument-bold;
+	font-size: 1700%;
+	letter-spacing: 7.5px;
+	 -webkit-text-stroke: 5px #fff800;
+ -webkit-text-fill-color: transparent;
+	margin-left: 5%;
+	margin-top: 16%;
+	position: absolute;
+
+  overflow: hidden;
+	
+  
+}
+
+.name-2
+{
+	width: 90%;
+	height: 25%;
+	
+	font-family: Monument-bold;
+	font-size: 1700%;
+	letter-spacing: 7.5px;
+	 -webkit-text-stroke: 5px #fff800;
+ -webkit-text-fill-color: transparent;
+	margin-left: 5%;
+	margin-top: 29%;
+	position: absolute;
+
+  overflow: hidden;
+	
+  -webkit-marquee-direction: reverse;
+}
+
+
+.artist-khung
+{
+	width: 100%;
+	height: 80%;
+
+	align-items: center ;
+	position: absolute;
+	
+
+}
+
+.artist_hinh
+{
+	
+	width: auto;
+	
+
+	position: absolute;
+	z-index: 300;
+	margin-left:31.5%;
+	margin-top: 1.5%;
+	
+	
+}
+.artist_frame 
+{
+	height: 747px;
+	width: 563px;
+	background-color: #f680ff;
+
+	position: absolute;
+	z-index: 200;
+	margin-left:34%;
+	margin-top: 8%;
+	
+	transform: rotate(-4deg);
+	
+	
+}
+
+.artist_frame_2
+{
+	height: 747px;
+	width: 563px;
+	background-color: #2e3192;
+
+	position: absolute;
+	z-index: 100;
+	margin-left:34%;
+	margin-top: 8%;
+	
+	transform: rotate(4deg);
+	
+}
+
+    /*marquee*/
+
+.marquee {
+  position: relative;
+  width: 100%;
+  
+  height: 90%;
+  margin-top: -2.5%;
+	-webkit-marquee-direction: reverse;
+
+	
+}
+.track {
+  position: absolute;
+  white-space:nowrap;
+  will-change:transform;
+  animation: marquee 50s linear infinite;
+
+}
+.track-rev {
+  position: absolute;
+  white-space:nowrap;
+  will-change:transform;
+  animation: marquee 50s linear reverse infinite;
+	
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+
+
+/* Navigation*/
+/*
+.about
+{
+	width: 214px;
+	height: 60px;
+	font-family: Monument-bold;
+	font-size: 49px;
+	text-align: left;
+	line-height: 70px;
+	letter-spacing: 2.5px;
+	margin: 46px 0px 0px 100px;
+	float: left;
+	
+}
+
+.about a
+{
+	text-decoration: none;
+	-webkit-text-stroke: 2px #fff;
+ -webkit-text-fill-color: transparent;
+}
+
+.about a:hover
+{
+	-webkit-text-stroke: 0px #fff;
+ -webkit-text-fill-color: #ffe600;
+}
+
+
+
+
+
+.artists
+{
+	width: 260px;
+	height: 60px;
+	font-family: Monument-bold;
+	font-size: 49px;
+	text-align: center;
+	line-height: 70px;
+	letter-spacing: 2.5px;
+	
+	margin: 46px 0px 0px 510.5px;
+	float: left;
+}
+
+.retangle
+{
+	width: 214px;
+	height: 60px;
+	background-color: #7F5CFF;
+	position: absolute;
+	right: 82px;
+	top: 970px;
+	z-index: -10;
+	transform: rotate(1deg);
+}
+
+
+.artists a
+{
+	text-decoration: none;
+	 -webkit-text-stroke: 2px #fff;
+ -webkit-text-fill-color: transparent;
+	
+}
+
+.artists a:hover
+{
+	-webkit-text-stroke: 0px #fff;
+ -webkit-text-fill-color: #ffe600;
+}
+
+
+
+.ticket
+{
+	width: 225px;
+	height: 60px;
+	font-family: Monument-bold;
+	font-size: 49px;
+	text-align: right;
+	line-height: 70px;
+	letter-spacing: 2.5px;
+	
+	margin: 46px 100px 0px 0px;
+	float: right;
+}
+
+.ticket a
+{
+	text-decoration: none;
+	 -webkit-text-stroke: 2px #fff;
+ -webkit-text-fill-color: transparent;
+	
+}
+
+.ticket a:hover
+{
+	-webkit-text-stroke: 0px #fff;
+ -webkit-text-fill-color: #ffe600;
+}
+.clear
+{
+	clear: both;
+}
+
+.contact
+{
+	width: 290px;
+	height: 60px;
+	font-family: Monument-bold;
+	font-size: 49px;
+	text-align: left;
+	line-height: 70px;
+	letter-spacing: 2.5px;
+	
+	float: left;
+	margin: 864px 0px 0px 100px;
+}
+
+.contact a
+{
+	text-decoration: none;
+	 -webkit-text-stroke: 2px #fff;
+ -webkit-text-fill-color: transparent;
+}
+
+.contact a:hover
+{
+	-webkit-text-stroke: 0px #fff;
+ -webkit-text-fill-color: #ffe600;
+}
+
+.faqs
+{
+	width: 170px;
+	height: 60px;
+	font-family: Monument-bold;
+	font-size: 49px;
+	text-align: right;
+	line-height: 70px;
+	letter-spacing: 2.5px;
+	
+	margin: 864px 100px 0px 0px;
+	float: right;
+}
+
+.faqs a
+{
+	text-decoration: none;
+	 -webkit-text-stroke: 0px #fff;
+ -webkit-text-fill-color: #ffe600;
+	
+}  */
+
+
+/*full-page-artist*/
+
+#fullpage 
+{
+	z-index: 300;
+	margin-top: 0%;
+	
+}
+
+h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	.section{
+	width: auto;
+	
+
+	position: absolute;
+	z-index: 500;
+
+	}
+	.slide{
+		background-size: cover;
+	}
+
+	/* Defining each section background and styles
+	* --------------------------------------- */
+	#section0{
+		background-image: url(images/marzuz-15.png);
+	}
+	
+	
+	#section2{
+	
+		padding: 0 0 0 0;
+	}
+	#section3{
+	
+		padding: 0 0 0 0;
+	}
+	
+
+
+	/*Adding background for the slides
+	* --------------------------------------- */
+	#slide1{
+		background-image: url(imgs/bg2.jpg);
+		padding: 0 0 0 0;
+	}
+	#slide2{
+		background-image: url(imgs/bg5.jpg);
+		padding: 0 0 0 0;
+	}
+
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+
+

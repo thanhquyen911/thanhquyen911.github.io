@@ -1,0 +1,171 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face
+{
+	font-family: Monument-regular;
+	src: url(../font/MonumentExtended-Regular.otf);
+}
+
+@font-face
+{
+	font-family: Monument-bold;
+	src: url(../font/MonumentExtended-Ultrabold.otf);
+}
+body, html
+{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background: #F680FF;
+	
+	
+}
+
+
+
+
+
+
+#wrapper
+{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	display: block;
+	z-index: 100;
+	
+}
+
+#fullpage
+{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	z-index: -1000;
+	
+}
+
+.hinh
+{
+	width: 100%;
+	height: 100%;
+	background: url(../images/about2-08.png);
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+	position: absolute;
+	z-index: -150;
+}
+
+
+.about-text
+{
+	width: 830px;
+	height: 200px;
+	font-family: Monument-regular;
+	font-size: 20px;
+	text-align: center;
+	margin-left: 19%;
+	line-height: 40px;
+	color: #7F5CFF;
+	transform: rotate(14deg);
+	position: absolute;
+	margin-top: 17%;
+	
+}
+
+.faqs-text
+{
+	width: 100%;
+	height: 70%;
+	display: block;
+	position: fixed;
+	
+	font-family: Monument-bold;
+	font-size: 2000%;
+	top: 20%;
+	text-align: center;
+	line-height: 90%;
+	color: #ffe600;
+	z-index: 10;
+}
+
+.faqs-text-shadow
+{
+	width: 100%;
+	height: 70%;
+	
+	position: fixed;
+	display: block;
+	font-family: Monument-bold;
+	font-size: 2000%;
+	top: 21%;
+	left: 1%;
+	text-align: center;
+	line-height: 90%;
+	color: #ffe600;
+	z-index: 10;
+	-webkit-text-stroke: 2px  #ffe600;
+ -webkit-text-fill-color: transparent;
+}
+
+.s1
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 30%;
+	
+	
+}
+
+.s2
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 30%;
+
+}
+
+.s3
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 30%;
+	
+}
+
+.faqs-box
+{
+	width: 40%;
+	height: 8%;
+	background-color: #7F5CFF;
+	margin-top: 3%;
+	font-family: Monument-bold;
+	font-size: 160%;
+	text-align: center;
+	line-height: 300%;
+	color: #ffe600; 
+	letter-spacing: 1.5px;
+	transform: rotate(-1deg);
+	
+}
+
+.faqs-box-02
+{
+	width: 40%;
+	height: 8%;
+	background-color: #7F5CFF;
+	margin-top: 3%;
+	font-family: Monument-bold;
+	font-size: 160%;
+	text-align: center;
+	line-height: 300%;
+	color: #ffe600;
+	letter-spacing: 1.5px;
+	transform: rotate(1deg);
+	
+}
+

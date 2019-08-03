@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<link href="css/main-faqs.css" rel="stylesheet">
+	<link href="css/fullpage.css" rel="stylesheet" type="text/css">
+	<link href="css/nav.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="css/pageTransitions.css" />
+	<link rel="stylesheet" type="text/css" href="css/transition.css" />
+	<link rel="stylesheet" type="text/css" href="js/jquery.smoothState.min.js" />
+	<link rel="stylesheet" type="text/css" href="js/smoothstate_2.js" />
+	<link rel="stylesheet" type="text/css" href="js/jquery-3.4.1.min.js" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	
+	<div id="wrapper">
+		
+	
+		<div id="nav">
+			<div class="about" style="float: left;"><a href="index.html">Home</a></div>
+			<div class="about" style="float: left;margin-left: 20%;"><a href="artist.html">Artists</a></div>
+			<div class="about" style="float: right;"><a href="about.html">About</a></div>
+			
+			<div class="clear"></div>
+			<div class="about" style="float: left; margin-top: 43.5%;"><a href="contact.html">Contact</a></div>
+			<div class="about" style="float: right; margin-top: 43.5%;-webkit-text-fill-color:#ffe600;-webkit-text-stroke: 0px #fff;">Faqs</div>
+		</div>
+		<div class="m-scene" id="main">
+			<div class="m-aside scene_element scene_element--fadeinright">
+		<div class="faqs-text">
+			General
+			question
+		</div>
+		<div class="faqs-text-shadow">
+			General
+			question
+		</div>
+		<div id="fullpage">
+		<div class="section s1" style="background-color: transparent;">
+		
+			<div class="faqs-box">Where can I get the ticket?</div>
+			<div class="faqs-box-02">What items are required?</div>
+			<div class="faqs-box">Where is the parking?</div>
+			<div class="faqs-box-02">What items are prohibited?</div>
+		
+		</div>
+		
+		<div class="section s2" style="background-color: transparent;">
+		
+			<div class="faqs-box">What items are allowed?</div>
+			<div class="faqs-box-02">What happened if it rains?</div>
+			<div class="faqs-box">What time does the door open?</div>
+			<div class="faqs-box-02">What time does the door close?</div>
+		
+		</div>
+		<div class="section s3" style="background-color: transparent;">
+		
+			<div class="faqs-box">Will there be wifi?</div>
+			<div class="faqs-box-02">What is included in my ticket?</div>
+			<div class="faqs-box">Can I get a refund if I can't come?</div>
+			<div class="faqs-box-02">How do i purchase tickets?</div>
+		
+		</div>
+		</div>
+	
+		
+	</div>
+	</div>	
+		
+	</div>
+	<script src="js/fullpage.js" type="text/javascript"></script>
+	
+	
+	<script type="text/javascript">
+	var myfullpage = new fullpage('#fullpage', {
+      
+      anchors: ['firstPage', 'secondPage', '3rdPage'],
+      
+      continuousVertical: true,
+      afterLoad: function(anchorLink, index){
+            console.log("AFTER LOAD - anchorLink:" +anchorLink + " index:" +index );
+        },
+        onLeave: function(index, nextIndex, direction){
+            console.log("ONLEAVE - index:" +index + " nextIndex:" +nextIndex  + " direction:" + direction);
+		
+        },
+		fixedElements: '.nav, .faqs-text, .faqs-text-shadow',
+    });
+	
+	</script>
+	
+</body>
+</html>

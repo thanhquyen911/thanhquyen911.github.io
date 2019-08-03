@@ -1,0 +1,183 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#nav
+{
+	width: 95%;
+	height: 90%;
+	position: fixed;
+	display: block;
+	margin: 2.5% 0% 0% 2.5%;
+	z-index: 1000;
+	
+	
+}
+
+.clear
+{
+	clear: both;
+}
+
+
+
+.about a
+{
+	text-decoration: none;
+-webkit-text-stroke: 2px #fff;
+ -webkit-text-fill-color: transparent;
+	
+}
+
+
+
+/*
+.about a:hover
+{
+	-webkit-text-stroke: 0px #fff;
+ -webkit-text-fill-color: #ffe600;
+}
+*/
+.about
+{
+	width: 20%;
+	height: 8%;
+
+	font-family: Monument-bold;
+	font-size: 400%;
+	text-align: center;
+	letter-spacing: 2.5px;
+	
+	
+
+}
+
+.about a:hover
+{
+	-webkit-text-stroke: 0px #fff;
+ -webkit-text-fill-color: #ffe600;
+}
+/*
+.rectangle
+{
+	width: 210px;
+	height: 60px;
+	background-color: #f680ff;
+	position: absolute;
+	left: 44%;
+	top: -1%;
+	z-index: -10;
+	transform: rotate(1deg);
+}
+*/
+
+.ticket
+{
+	width: 20%;
+	height: 8%;
+	background-color: darkcyan;
+	font-family: Monument-bold;
+	font-size: 400%;
+	text-align: center;
+	letter-spacing: 2.5px;
+	float: right;
+	
+	
+	
+}
+
+.ticket a
+{
+	text-decoration: none;
+	 -webkit-text-stroke: 2px #fff;
+ -webkit-text-fill-color: transparent;
+	
+}
+
+.ticket a:hover
+{
+	-webkit-text-stroke: 0px #fff;
+ -webkit-text-fill-color: #ffe600;
+}
+
+.artists
+{
+	width: 20%;
+	height: 8%;
+	background-color: darkcyan;
+	font-family: Monument-bold;
+	font-size: 400%;
+	text-align: center;
+	letter-spacing: 2.5px;
+	
+}
+
+.artists a
+{
+	text-decoration: none;
+	 -webkit-text-stroke: 0px #fff;
+ -webkit-text-fill-color: #fff800;
+	
+}
+
+.artists a:hover
+{
+	-webkit-text-stroke: 0px #fff;
+ -webkit-text-fill-color: #ffe600;
+}
+
+.contact
+{
+	width: 22%;
+	height: 8%;
+	
+	font-family: Monument-bold;
+	font-size: 400%;
+	text-align: center;
+	letter-spacing: 2.5px;
+	float: left;
+	
+	margin-top: 43.5%;
+}
+
+.contact a
+{
+	text-decoration: none;
+	 -webkit-text-stroke: 2px #fff;
+ -webkit-text-fill-color: transparent;
+}
+
+.contact a:hover
+{
+	-webkit-text-stroke: 0px #fff;
+ -webkit-text-fill-color: #ffe600;
+}
+
+.faqs
+{
+	width: 15%;
+	height: 8%;
+	background-color: darkcyan;
+	font-family: Monument-bold;
+	font-size: 400%;
+	text-align: center;
+	letter-spacing: 2.5px;
+	float: right;
+	
+	margin-top: 43.5%;
+
+
+}
+
+.faqs a
+{
+	text-decoration: none;
+	 -webkit-text-stroke: 2px #fff;
+ -webkit-text-fill-color: transparent;
+	
+}
+
+.faqs a:hover
+{
+	-webkit-text-stroke: 0px #fff;
+ -webkit-text-fill-color: #ffe600;
+}
